@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Statistics Pre-Finals Test</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="welcome-screen" class="screen active">
+      <h1>Statistics Pre-Finals Test</h1>
+      <div class="character">
+        <div class="robot">
+          <div class="antenna"></div>
+          <div class="head">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Enter your name" required>
+        <button onclick="startTest()" class="start-btn">Start Test!</button>
+      </div>
+    </div>
+
+    <div id="test-screen" class="screen">
+      <div class="header">
+        <span id="user-display"></span>
+        <span id="timer"></span>
+        <div id="progress-bar"></div>
+      </div>
+      <div id="question-container">
+        <!-- Questions will be dynamically loaded here -->
+      </div>
+      <div class="navigation">
+        <button id="prev-btn" onclick="previousQuestion()">Previous</button>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <button id="submit-btn" onclick="submitTest()">Submit Test</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
